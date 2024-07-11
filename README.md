@@ -28,8 +28,7 @@ Before run the code, install packages from the requirements.txt file.
 
 2) Usage
 - Input: DICOM series with two different time points; base line (BL) and pre-surgery (PreSurg).
-- Output for each modules:
-      -- NIFTI file for each time point (module 01), 
+- Output for each modules:  NIFTI file for each time point (module 01), 
 
 3) Module for the calculation
 
