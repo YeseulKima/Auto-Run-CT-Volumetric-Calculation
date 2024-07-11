@@ -16,7 +16,9 @@ Before run the code, install packages from the requirements.txt file.
 - Input DICOM series should be structurized like the below.
 <details>
   <summary>Click to see the directory structure</summary>
+  
   ![DICOM Series Directory Structure]![image](https://github.com/user-attachments/assets/8f6ad81e-9a34-4a30-ac33-b5679ab99253)
+  
 </details>
 
 - Don't make any directory empty.
