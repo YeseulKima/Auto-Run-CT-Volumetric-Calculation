@@ -1,0 +1,45 @@
+{
+
+  "_comments":"Control variables for the initialization",
+  "start_point": 0,
+  "run_following_modules": false,
+
+  "_comments1":"Control variables for the module 01",
+  "clear_pre_existing_Converted_Nifti_dirPath" : true,
+  "run_for_BL_and_PreSurg_comp": true,
+  "DICOM_series_dirPath": "/rsrch5/home/radphys_rsch/ykim23/Pancreatic_Cancer/Converted_Nifti/sorted_pts_with_BL_and_PreSurg_fin/test_module/DICOM_series_temp",
+  "Converted_NIFTI_dirPath": "/rsrch5/home/radphys_rsch/ykim23/Pancreatic_Cancer/Converted_Nifti/sorted_pts_with_BL_and_PreSurg_fin/test_module/",
+  "Converted_NIFTI_dirName": "Converted_NIFTIs",
+
+  "_comments2":"Control variables for the module 02",
+  "Converted_NIFTI_dirPath" : "/rsrch5/home/radphys_rsch/ykim23/Pancreatic_Cancer/Converted_Nifti/sorted_pts_with_BL_and_PreSurg_fin/test_module/",
+  "Converted_NIFTI_dirName" : "Converted_NIFTIs",
+  "task_to_run" : ["total"],
+  "get_statistics" : false,
+  "fName_max_length" : 30,
+  "check_time" : false,
+
+  "_comments3":"Control variables for the module 03",
+  "tPoints_to_check": ["BL", "PreSurg"],
+  "organ_vol_calc_option": 1,
+  "organs_to_check": ["liver", "pancreas"],
+  "tissue_comps_to_check": ["subcutaneous_fat", "torso_fat", "skeletal_muscle"],
+  "read_dirPath": "/rsrch5/home/radphys_rsch/ykim23/Pancreatic_Cancer/Converted_Nifti/sorted_pts_with_BL_and_PreSurg_fin/temp",
+  "save_dirPath": "/rsrch5/home/radphys_rsch/ykim23/Pancreatic_Cancer/Converted_Nifti/sorted_pts_with_BL_and_PreSurg_fin/stat_results",
+  "save_fName": "temp_volumetric_vals_df.csv",
+  "is_save_img_at_center_L3": true,
+
+
+  "_comments4":"Control variables for the module 04",
+  "load_prepcoessed_df_fName" : "temp_volumetric_vals_df_72pts.csv",
+    "read_scoring_df_fPath" :"/home/ykim23/Pancreatic_Cancer/Alliance_Trial/Working_Sheets/1_Notes_Sheets/tmp_verified_72pts.csv",
+    "PT_ID_colName_in_scoring_df" : "Patient Identfier",
+    "save_fName_post_proc_df" : "volumetric_vals_df.csv",
+    "save_fName_stat_anal_df" : "_statistics.csv",
+    "endpoints_to_check": {"Consensus_plus_alpha_Delta_Score":["High Delta", "Low Delta"],
+                          "Consensus_plus_Interface_at_Presurg":["Type I", "Type II"]},
+    "is_save_boxplot" : true
+
+}
+
+
