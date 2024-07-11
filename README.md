@@ -23,12 +23,13 @@ Before run the code, install packages from the requirements.txt file.
     
   </details>
 
+- Input arguments for module 2 follow that of [TotalSegmentator](https://github.com/wasserth/TotalSegmentator). 
 - Don't make the "DICOM_series_folder" empty.
-- 
+- To run "tissue_types" task, register your own license of TotalSegmentator to the system.
 
 2) Usage
-- Input: DICOM series with two different time points; base line (BL) and pre-surgery (PreSurg).
-- Output for each modules:
+- **Input**: DICOM series with two different time points; base line (BL) and pre-surgery (PreSurg).
+- **Output** for each modules:
   Output from each module becomes the input of the following module.
   - **Module 01**: NIFTI file for each time point.
   - **Module 02**: Auto segmented masks using [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) with the given task.
