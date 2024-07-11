@@ -13,8 +13,7 @@ Before run the code, install packages from the requirements.txt file.
 ## Description
 
 1) Pre-requisities and notes for warnings
-- Recommended input DICOM series should be structurized like the below (click the arrow).
-  
+- Recommended input DICOM series should be structurized like the below (click the arrow).  
   (Input directory >> Patient Identifier Number >> Validated_BL_and_PreSurg >> BL_CTScans (or PreSurg_CTScans) >> DICOM_series_folder >> 1.dcm ~ n.dcm)
 
   <details>
