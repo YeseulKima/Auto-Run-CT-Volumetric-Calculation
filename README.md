@@ -39,8 +39,12 @@ Before run the code, install packages from the requirements.txt file.
   - start_point: 0 will start from the module 01, 1 will from module 02, and so on.
   - run_following_modules: "true" will run all the following modules, "false" will only run the specified module.
   - clear_pre_existing_Converted_Nifti_dirPath: "true" will remove all files in the "Converted_NIFTI_dirPath".
-  - 
+  - get_statistics: "true" will calculate the statistics from the TotalSegmentator module.
+  - is_save_img_at_center_L3: "true" will save the axial slice of center of the L3 location.
+  - is_save_boxplot: "true" will save the box plots and line plots from the statistical analysis.
+    
 ### 3) Module for the calculation
+- **
 
 
 ## Paper
