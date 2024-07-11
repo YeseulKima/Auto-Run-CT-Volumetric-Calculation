@@ -35,7 +35,11 @@ Before run the code, install packages from the requirements.txt file.
   - **Module 02**: Auto segmented masks using [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) with the given task.
   - **Module 03**: Calculated organ (ex. liver, pancreas) volume in mm3 or tissue (ex. subcutaneous fat, torso fat, skeleton muscle) volume percentage with the body cavity at center of L3. 
   - **Module 04**: Statistical analysis results with given endpoints across groups. 
-
+- Notes for the config file:
+  - start_point: 0 will start from the module 01, 1 will from module 02, and so on.
+  - run_following_modules: "true" will run all the following modules, "false" will only run the specified module.
+  - clear_pre_existing_Converted_Nifti_dirPath: "true" will remove all files in the "Converted_NIFTI_dirPath".
+  - 
 ### 3) Module for the calculation
 
 
