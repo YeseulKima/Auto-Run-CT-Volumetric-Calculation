@@ -12,7 +12,7 @@ Before run the code, install packages from the requirements.txt file.
 
 ## Description
 
-1) Pre-requisities and notes for warnings
+### 1) Pre-requisities and notes for warnings
 - Recommended input DICOM series should be structurized like the below (click the arrow).  
   ("path_to_input_directory/Patient_Identifier_Number/Validated_BL_and_PreSurg/BL_CTScans(PreSurg_CTScans)/DICOM_series_folder/1.dcm ~ n.dcm")
 
@@ -27,7 +27,7 @@ Before run the code, install packages from the requirements.txt file.
 - Don't make the "DICOM_series_folder" empty.
 - To run "tissue_types" task, register your own license of TotalSegmentator to the system.
 
-2) Usage
+### 2) Usage
 - **Input**: DICOM series with two different time points; base line (BL) and pre-surgery (PreSurg).
 - **Output** for each modules:
   Output from each module becomes the input of the following module.
@@ -36,7 +36,7 @@ Before run the code, install packages from the requirements.txt file.
   - **Module 03**: Calculated organ (ex. liver, pancreas) volume in mm3 or tissue (ex. subcutaneous fat, torso fat, skeleton muscle) volume percentage with the body cavity at center of L3. 
   - **Module 04**: Statistical analysis results with given endpoints across groups. 
 
-3) Module for the calculation
+### 3) Module for the calculation
 
 
 ## Paper
