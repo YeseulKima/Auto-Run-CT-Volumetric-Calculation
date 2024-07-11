@@ -45,7 +45,7 @@ Before run the code, install packages from the requirements.txt file.
     
 ### 3) Usage
 - Check the input arguments from the config file.
-- Run the main file like below, and check the outputs. 
+- Run the main file like below, and check the outputs.  
      $python main.py
 
 
