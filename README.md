@@ -30,8 +30,10 @@ Before run the code, install packages from the requirements.txt file.
 - Input: DICOM series with two different time points; base line (BL) and pre-surgery (PreSurg).
 - Output for each modules:
   Output from each module becomes the input of the following module.
-  - Module 01: NIFTI file for each time point
-  - Module 02: Auto segmented masks using [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) with the given task. 
+  - Module 01: NIFTI file for each time point.
+  - Module 02: Auto segmented masks using [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) with the given task.
+  - Module 03: Calculated organ (ex. liver, pancreas) volume in mm3 or tissue (ex. subcutaneous fat, torso fat, skeleton muscle) volume percentage with the body cavity at center of L3. 
+  - Module 04: Statistical analysis results with given endpoints across groups. 
 
 3) Module for the calculation
 
