@@ -13,8 +13,13 @@ Before run the code, install packages from the requirements.txt file.
 ## Description
 
 1) Pre-requisities
+- Input DICOM series should be structurized like the below.
+- Don't make any directory empty.
+- 
 
 2) Usage
+- Input:
+- 
 
 3) Module for the calculation
 
