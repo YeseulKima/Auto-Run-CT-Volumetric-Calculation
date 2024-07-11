@@ -14,7 +14,7 @@ Before run the code, install packages from the requirements.txt file.
 
 1) Pre-requisities and notes for warnings
 - Recommended input DICOM series should be structurized like the below (click the arrow).  
-  ("path_to_input_directory/Patient_Identifier_Number/Validated_BL_and_PreSurg/BL_CTScans(or PreSurg_CTScans)/DICOM_series_folder/1.dcm ~ n.dcm")
+  ("path_to_input_directory/Patient_Identifier_Number/Validated_BL_and_PreSurg/BL_CTScans(PreSurg_CTScans)/DICOM_series_folder/1.dcm ~ n.dcm")
 
   <details>
     <summary>Click to see the directory structure</summary>
