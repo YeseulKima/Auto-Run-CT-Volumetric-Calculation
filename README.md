@@ -27,7 +27,7 @@ Before run the code, install packages from the requirements.txt file.
 - Don't make the "DICOM_series_folder" empty.
 - To run "tissue_types" task, register your own license of TotalSegmentator to the system.
 
-### 2) Usage
+### 2) Notes for the input and the outputs
 - **Input**: DICOM series with two different time points; base line (BL) and pre-surgery (PreSurg).
 - **Output** for each modules:
   Output from each module becomes the input of the following module.
@@ -43,8 +43,10 @@ Before run the code, install packages from the requirements.txt file.
   - is_save_img_at_center_L3: "true" will save the axial slice of center of the L3 location.
   - is_save_boxplot: "true" will save the box plots and line plots from the statistical analysis.
     
-### 3) Module for the calculation
-- **
+### 3) Usage
+- Check the input arguments from the config file.
+- Run the main file like below, and check the outputs. 
+   $python main.py
 
 
 ## Paper
