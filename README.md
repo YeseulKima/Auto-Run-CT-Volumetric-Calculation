@@ -29,7 +29,9 @@ Before run the code, install packages from the requirements.txt file.
 2) Usage
 - Input: DICOM series with two different time points; base line (BL) and pre-surgery (PreSurg).
 - Output for each modules:
-  - NIFTI file for each time point (module 01), 
+  Output from each module becomes the input of the following module.
+  - Module 01: NIFTI file for each time point
+  - Module 02: Auto segmented masks using [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) with the given task. 
 
 3) Module for the calculation
 
