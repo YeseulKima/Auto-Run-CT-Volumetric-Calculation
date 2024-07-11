@@ -14,7 +14,7 @@
   "_comments2":"Control variables for the module 02",
   "Converted_NIFTI_dirPath" : "/rsrch5/home/radphys_rsch/ykim23/Pancreatic_Cancer/Converted_Nifti/sorted_pts_with_BL_and_PreSurg_fin/test_module/",
   "Converted_NIFTI_dirName" : "Converted_NIFTIs",
-  "task_to_run" : ["total"],
+  "task_to_run" : ["total", "tissue_types", "body"],
   "get_statistics" : false,
   "fName_max_length" : 30,
   "check_time" : false,
