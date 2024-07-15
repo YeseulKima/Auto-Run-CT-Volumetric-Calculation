@@ -96,15 +96,18 @@ def find_center_L3_from_SegWh_dirPath(SegWh_dirPath:str):
                             center_L3 = round((bottom_L3 + top_L3) / 2)
     return (bottom_L3, center_L3, top_L3, notes)
 
-def get_roi_volume_at_center_L3(path_to_roi_Nifti_img:str, center_L3, save_fPath=None):
+def get_roi_volume_at_center_L3(path_to_roi_Nifti_img:str, center_L3, save_fPath=None, is_tissue=False):
     roi_nii_img = sitk.ReadImage(path_to_roi_Nifti_img)
     roi_arr = sitk.GetArrayFromImage(roi_nii_img)
     roi_at_center_L3 = roi_arr[center_L3, :, :]
     voxel_counts_at_center_L3 = np.sum(roi_at_center_L3 == 1)
 
     spacing = roi_nii_img.GetSpacing()
+    if not is_tissue:
+        voxel_volume = spacing[0] * spacing[1] * spacing[2]
+    if is_tissue:
+        voxel_volume = spacing[0] * spacing[1]
 
-    voxel_volume = spacing[0] * spacing[1] * spacing[2]
     roi_volume_at_center_L3 = voxel_counts_at_center_L3 * voxel_volume
 
     if save_fPath is not None:
@@ -236,7 +239,7 @@ class volumetric_values_df():
                                 img_at_center_L3_fPath = os.path.join(img_at_center_L3_dirPath, str(PT_ID)+"_"+str(tPoint)+"_"+str(tissue)+".png")
                             else:
                                 img_at_center_L3_fPath = None
-                            area_tissue_mask_at_center_L3 = get_roi_volume_at_center_L3(tissue_mask_fPath, center_L3, save_fPath=img_at_center_L3_fPath)
+                            area_tissue_mask_at_center_L3 = get_roi_volume_at_center_L3(tissue_mask_fPath, center_L3, save_fPath=img_at_center_L3_fPath, is_tissue=True)
                             tissue_vals_dict[tissue].append(area_tissue_mask_at_center_L3)
 
             values_dict = {**organ_volume_dict, **tissue_vals_dict, **body_cav_dict}
