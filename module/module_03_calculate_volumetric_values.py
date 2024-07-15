@@ -106,6 +106,7 @@ def get_roi_volume_at_center_L3(path_to_roi_Nifti_img:str, center_L3, save_fPath
     if not is_tissue:
         voxel_volume = spacing[0] * spacing[1] * spacing[2]
     if is_tissue:
+        print('This is tissue, will calculate pixel not voxel.')
         voxel_volume = spacing[0] * spacing[1]
 
     roi_volume_at_center_L3 = voxel_counts_at_center_L3 * voxel_volume
